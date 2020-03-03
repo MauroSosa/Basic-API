@@ -1,0 +1,35 @@
+{
+  "name": "basicapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "concurrently \"ttsc --watch\" \"nodemon dist/index.js \"",
+    "tslint": "tslint --project tsconfig.json",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.17.1",
+    "@types/morgan": "^1.7.37",
+    "@types/node": "^12.12.7",
+    "@types/request": "^2.48.3",
+    "@types/request-promise": "^4.1.44",
+    "concurrently": "^5.0.0",
+    "express": "^4.17.1",
+    "fastest-validator": "^0.6.18",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "typescript": "^3.7.4"
+  },
+  "devDependencies": {
+    "@zerollup/ts-transform-paths": "^1.7.12",
+    "tslint": "^5.20.1",
+    "ttypescript": "^1.5.10"
+  }
+}
